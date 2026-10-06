@@ -38,16 +38,16 @@ git clone https://github.com/kaamAmmar/ssh-bruteforce-blocker.git
 cd ssh-bruteforce-blocker
 ```
 
-Modifier la liste blanche dans `ssh_guard_simple.py` (variable `WHITELIST`) pour y mettre **votre propre IP** avant tout test réel.
+Modifier la liste blanche dans `ssh_guard.py` (variable `WHITELIST`) pour y mettre **votre propre IP** avant tout test réel.
 
 ## Utilisation
 
 ```bash
 # Mode test : affiche sans bloquer
-sudo python3 ssh_guard_simple.py --test
+sudo python3 ssh_guard.py --test
 
 # Mode réel : bloque avec iptables
-sudo python3 ssh_guard_simple.py
+sudo python3 ssh_guard.py
 ```
 
 Vérifier les blocages et débloquer :
